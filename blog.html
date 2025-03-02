@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question & Answer</title>
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-sky-100">
+
+    <!-- Navbar section -->
+    <section class="mx-auto pt-6 mb-6 px-20">
+        <nav class="bg-white rounded-2xl mx-auto pt-2 mb-6">
+            <div class="flex justify-between items-center px-6 py-4">
+                <div class="flex items-center gap-x-3">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex items-center gap-x-10">
+                    <button id="back-to-desk-btn" class="bg-blue-500 text-white font-bold px-6 py-4 rounded-lg cursor-pointer">Back to
+                        Desk</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <h1 class="my-6 py-5 text-center text-4xl font-bold">Blogs</h1>
+    <main>
+
+        <!-- Main section -->
+        <section class="mx-auto space-y-5 pb-10 px-20">
+
+            <!-- Question 1 -->
+            <div class="bg-white rounded-xl p-8 shadow">
+                <h1 class="pb-5 mb-5 border-blue-100 border-dashed border-b-2 font-bold text-2xl">Question-1: What are
+                    the different ways to select an element in the DOM?</h1>
+                <p class="text-lg text-gray-700">There are different ways to select an element in the DOM.Here are: (a) Using
+                    getElementById : This method  allows  to select an element by its ID.It is most useful method.(b) Using getElementsByTagName : This method allows to select elements by their class name. It returns a collection of all elements in the document.(c) Using getElementsByTagName : This method allows to select elements by their tag name. It returns a collection of all elements in the document.(d) Using querySelector : The querySelector method allows you to select the first element that matches a specified CSS selector(s) in the document.(e) Using querySelectorAll : The querySelectorAll method allows to select all elements that match a specified CSS selector(s) in the document.</p>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-white rounded-xl p-8 shadow">
+                <h1 class="pb-5 mb-5 border-blue-100 border-dashed border-b-2 font-bold text-2xl"> Question-2: What is
+                    the difference between innerHTML, innerText, and textContent ?</h1>
+                <p class="text-lg text-gray-700">The differences between innerHTML, innerText, and
+                    textContent are :(a) innerHTML:It gets or sets the full HTML code.It parses the content as HTML, so it can include and render HTML tags.(b)innerText:Itgets or sets the inner text of an element.(c)textContent:It gets or sets the text content of an element, including all elements, with hidden element.It ignores HTML markup and CSS styling.It is generally faster than innerText.</p>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-white rounded-xl p-8 shadow">
+                <h1 class="pb-5 mb-5 border-blue-100 border-dashed border-b-2 font-bold text-2xl">Question-3: What is
+                    event delegation in the DOM?</h1>
+                <p class="text-lg text-gray-700">Event delegation is a technique in JavaScript, where we can set handler an event to a parent element.This is used ,when we add event handler for multiple child element of same type.</p>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="bg-white rounded-xl p-8 shadow">
+                <h1 class="pb-5 mb-5 border-blue-100 border-dashed border-b-2 font-bold text-2xl">Question-4: What is
+                    event bubbling in the DOM?</h1>
+                <p class="text-lg text-gray-700">Event Bubbling is a concept in the DOM (Document Object Model). It
+                    happens when an element receives an event, and that event bubbles up (or you can say is transmitted
+                    or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root
+                    element.Event bubbling is the propagation of events from the bottom to the top of the DOM tree, from
+                    child elements to parent elements. It is one sort of event propagation. Another form is event
+                    capturing, which occurs when events propagate down the DOM tree from parent to child elements.</p>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="bg-white rounded-xl p-8 shadow">
+                <h1 class="pb-5 mb-5 border-blue-100 border-dashed border-b-2 font-bold text-2xl">Question-5: How do you
+                    create, add, and remove elements using JavaScript?</h1>
+                <p class="text-lg text-gray-700 ">
+                   
+                   We can create,add & remove an element using javascript. Creating Elements:document.createElement(tagName):This is the fundamental method. It creates a new HTML element specified by the tagName.2. Adding
+                    Elements:parentNode.appendChild(childNode):Appends a childNode as the last child of
+                    parentNode.;  parentNode.insertBefore(newNode, referenceNode):Inserts a newNode before a referenceNode within a parentNode..3. Removing Elements:parentNode.removeChild(childNode):Removes a childNode from its parentNode.
+
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="script/utilities.js"></script>
+    <script src="script/blog.js"></script>
+
+
+</body>
+
+</html>
